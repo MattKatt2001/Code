@@ -4,5 +4,5 @@ def is_factor(n,i):
     else:
         return 0
 
-x = is_factor()#give two int values
+x = is_factor(10,2)#give two int values
 print(x)
