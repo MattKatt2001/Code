@@ -16,6 +16,7 @@ for x in y:
         z.append(x)
 
 #print(z)
+
 ans = sum(z)
 print(ans)
 
