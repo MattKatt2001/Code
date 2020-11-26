@@ -17,3 +17,6 @@ def main(x):
         print(num, "is not a prime")
 
 main(600851475143)
+
+#solved
+#ans = 6857
