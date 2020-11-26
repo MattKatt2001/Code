@@ -20,3 +20,4 @@ ans = sum(z)
 print(ans)
 
 #solved
+#ans 233168
