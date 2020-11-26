@@ -1,5 +1,5 @@
 def order(x):
-    
+
     y = []
     i = len(x[0])
     i = i - 1
@@ -9,6 +9,6 @@ def order(x):
         i -= 1
 
     for i in y:
-        print(i, end = ' ')
+        print(i, end = '')
 
 x = order(["123456789"])#enter a string returns reversed
