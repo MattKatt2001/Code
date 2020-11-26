@@ -7,5 +7,4 @@ def order(x):
         print(x[0][i])
         i -= 1
     #print(y)
-
 x = order(["123456789"])#enter a string returns reversed
