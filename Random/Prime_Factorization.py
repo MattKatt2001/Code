@@ -1,3 +1,5 @@
+# "Prime Factorization" is finding which prime numbers multiply together to make the original number.
+
 def main(x):
     num = x #Give int value
     if num > 1:
@@ -7,8 +9,8 @@ def main(x):
                 main(num//i)
                 break
         else:
-            print(num, "is the answer")
+            print(num, "is as far as this can go (this is the highest prime number)")
     else:
         print(num, "is not a prime")
 
-main(600851475143)  #testing for euler 3
+main(249867009)  #give input it will execute prime Factorization
