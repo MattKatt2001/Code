@@ -33,4 +33,4 @@ def fib():
 fib()
 
 #solved
-#ans 4613732
+#ans = 4613732

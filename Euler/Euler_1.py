@@ -24,4 +24,4 @@ ans = sum(z)
 print(ans)
 
 #solved
-#ans 233168
+#ans = 233168

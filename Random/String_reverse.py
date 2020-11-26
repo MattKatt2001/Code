@@ -11,4 +11,4 @@ def order(x):
     for i in y:
         print(i, end = '')
 
-x = order(["123456789"])#enter a string returns reversed
+order(["123456789"])#enter a string returns reversed
