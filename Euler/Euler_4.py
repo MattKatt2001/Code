@@ -3,9 +3,8 @@
 
 #We have a workin alogrithim that will determine a palindrome now we need to run it through different combinations of ints
 
-def main(num):
-
-    arr = []
+def main(num, x, z):
+    #arr = []
     orginal = num
     ans = 0
 
@@ -17,18 +16,18 @@ def main(num):
 
         if(orginal == ans):
             pass
-            print(orginal, "is a palindrome!") #A palindromic number reads the same both ways
+            print(orginal, "is a palindrome!", x , "x", z) #A palindromic number reads the same both ways
 
         else:
             pass
-    print(arr)
+    #print(arr)
 
 def filter(x):
     i = 0
     z = x
     while x > i:
         y = x * z
-        main(y)
+        main(y,x,z)
         z = z - 1
         if z == 1:
             z = 999
@@ -38,5 +37,5 @@ def filter(x):
 x = filter(999)
 print(x)
 
-#solved but messy
-#ans = 906609
+#solved 
+#ans = 906609   919 x 913

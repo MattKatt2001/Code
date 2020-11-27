@@ -9,4 +9,4 @@ def main(x):
     arr.sort(reverse=True)
     print(arr)
 
-main(10) #the ammount of numbers
+main(4) #the ammount of numbers
