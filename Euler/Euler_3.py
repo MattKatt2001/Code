@@ -13,9 +13,6 @@ def main(x):
                 break
         else:
             print(num, "is the answer")
-    else:
-        print(num, "is not a prime")
-
 main(600851475143)
 
 #solved
