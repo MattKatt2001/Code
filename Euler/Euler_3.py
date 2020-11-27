@@ -8,7 +8,7 @@ def main(x):
     if num > 1:
         for i in range(2,num):
             if (num % i) == 0:
-                print(i,"times",num//i,"is",num) #//rounds down
+                print(i,"times",num//i,"is",num) #// rounds the result down to the nearest whole number
                 main(num//i)
                 break
         else:
