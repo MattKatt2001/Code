@@ -28,5 +28,5 @@ def filter(x):
             x = x - 1
 
 
-x = filter() #input an !int
+x = filter(999) #input an int note it will calculate for !int
 print(x)
