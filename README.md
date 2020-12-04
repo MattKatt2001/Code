@@ -1,2 +1,2 @@
 #Code
-This is a testing repo for random projects.
+This is my main repo for doing testing and other stuff.

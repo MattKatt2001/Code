@@ -1,7 +1,14 @@
-def Addnum(x,y):
-    return x + y
+def Addnum(x):
+    i = 0
+    arr = []
+    while x > i:
+        num=int(input("Enter a number:"))
+        arr.append(num)
+        x = x - 1
 
-x = Addnum(4,6)#Give two int values
+    return sum(arr)
+
+
+num1=int(input("How many numbers do you want to add:"))
+x = Addnum(num1)
 print(x)
-
-#num=int(input("Enter a number:")) use this if you want

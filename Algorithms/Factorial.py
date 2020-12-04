@@ -11,6 +11,6 @@ def factorial(x):
     else:
         return x * factorial(x-1)
 
-
-x = main(999)# input an int both methods work
+fact = int(input("Enter a number:"))
+x = main(fact)
 print(x)

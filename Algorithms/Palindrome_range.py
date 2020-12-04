@@ -28,5 +28,5 @@ def filter(x):
             x = x - 1
 
 
-x = filter(100) #input an !int
+x = filter() #input an !int
 print(x)
