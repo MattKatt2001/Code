@@ -11,11 +11,6 @@ y2 = sum(x2)
 
 z = y1 ** 2
 
-
-#print(y1)
-#print(y2)
-#print(z)
-
 ans = z - y2
 print(ans)
 

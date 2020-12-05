@@ -3,7 +3,7 @@ def fib():
     y = 1
     c = 0
 
-    while c < 10: #make this for how many terms you want
+    while c < 100: #make this for how many terms you want
         print(x)
         z = x + y
         x = y
