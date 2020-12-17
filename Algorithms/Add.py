@@ -10,5 +10,4 @@ def Addnum(x):
 
 
 num1=int(input("How many numbers do you want to add:"))
-x = Addnum(num1)
-print(x)
+print(Addnum(num1))
