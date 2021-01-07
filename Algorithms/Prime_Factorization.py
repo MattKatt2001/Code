@@ -13,4 +13,4 @@ def main(x):
     else:
         print(num, "is not a prime")
 
-main()  #give input it will execute prime Factorization
+main(4567456345)  #give input it will execute prime Factorization
