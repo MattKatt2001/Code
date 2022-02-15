@@ -95,4 +95,9 @@ public:
 		_name = name;
 		_height = height;
 	}
+
+	void sprint()
+	{
+		_weight = _weight - 5;
+	}
 };
