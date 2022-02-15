@@ -12,15 +12,17 @@ protected:
 	string _gender;
 	string _name;
 	int _height;
+	int _speed;
 
 public:
-	human(int age, int weight, string gender, string name, int height)
+	human(int age, int weight, string gender, string name, int height, int speed)
 	{
 		_age = age;
 		_weight = weight;
 		_gender = gender;
 		_name = name;
 		_height = height;
+		_speed = speed;
 	};
 
 	void set_age(int age)
@@ -73,6 +75,16 @@ public:
 		return _height;
 	}
 
+	void set_speed(int speed)
+	{
+		_speed = speed;
+	}
+
+	int get_speed()
+	{
+		return _speed;
+	}
+
 	void eat()
 	{
 		_weight = ++_weight;
@@ -87,17 +99,18 @@ public:
 class runner: public human
 {
 public:
-	runner(int age, int weight, string gender, string name, int height): human(age, weight, gender, name, height)
+	runner(int age, int weight, string gender, string name, int height, int speed): human(age, weight, gender, name, height, speed)
 	{
 		_age = age;
-		_weight = weight*0.75;
+		_weight = weight;
 		_gender = gender;
 		_name = name;
 		_height = height;
+		_speed = speed*1.5;
 	}
 
 	void sprint()
 	{
-		_weight = _weight - 5;
+		_weight = _weight-5;
 	}
 };
