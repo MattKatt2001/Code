@@ -41,12 +41,10 @@ public:
 	{
 		int x = human.get_speed();
 		int y = runner.get_speed();
-		if (x > y)
+
+		for(int i = 0; _length > 0; _length -=x)
 		{
-			cout<<human.get_name() + " wins";
-		} else
-		{
-			cout<<runner.get_name() + " wins";
+			i += 1;
 		}
 	}
 };
