@@ -3,21 +3,14 @@
 #include <string>
 #include <cmath>
 #include "human.cpp"
-//#include "race.cpp"
+#include "race.cpp"
 using namespace std;
 
 int main()
 {
-	human Matt(20, 90, "Male", "Matthew", 187 ,10);
+	human Matt(20, 90, "Male", "Matthew", 187 ,20);
 	runner Usain(35 ,94, "Male", "Usain", 195, 10);
-	cout<<Matt.get_speed()<<"\n";
-	cout<<Usain.get_speed()<<"\n";
+	race cup(800,2);//This doesn't actually mean anything atm just creates the object
+	cup.start(Matt, Usain);
 	return 0;
 }
-
-/*int _age;
-int _weight;
-string _gender;
-string _name;
-int _height;
-int _speed*/

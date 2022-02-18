@@ -2,26 +2,51 @@
 #include <fstream>
 #include <string>
 #include <cmath>
-//#include "human.cpp"
 using namespace std;
 
 class race
 {
 private:
 	int _length;
-	human _human();
-	runner _runner();
+	int _racers;
 
 public:
-	race(int length, human human(), runner runner())
+	race(int length, int racers)
 	{
 		_length = length;
-		_human = human;
-		_runner = runner;
+		_racers = racers;
 	}
 
-	string commence_race(race race)
+	void set_length(int length)
 	{
-		return "joe";
+		_length = length;
+	}
+
+	int get_length()
+	{
+		return _length;
+	}
+
+	void set_racers(int racers)
+	{
+		_racers = racers;
+	}
+
+	int get_racers()
+	{
+		return _racers;
+	}
+
+	void start(human human, runner runner) //implement so that _length is subtracted by _speed and whoever reachs 0 first wins
+	{
+		int x = human.get_speed();
+		int y = runner.get_speed();
+		if (x > y)
+		{
+			cout<<human.get_name() + " wins";
+		} else
+		{
+			cout<<runner.get_name() + " wins";
+		}
 	}
 };

@@ -106,7 +106,7 @@ public:
 		_gender = gender;
 		_name = name;
 		_height = height;
-		_speed = speed*1.5;
+		_speed = speed*1.5;//I know this doesn't exactly make sense given that base human also has speed, think of it as that a runner has better technique and so he gets more out of his base speed
 	}
 
 	void sprint()
