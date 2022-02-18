@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <cmath>
+#include <vector>
 using namespace std;
 
 class race
@@ -37,14 +38,19 @@ public:
 		return _racers;
 	}
 
-	void start(human human, runner runner) //implement so that _length is subtracted by _speed and whoever reachs 0 first wins
+	void start(human human, runner runner)
 	{
 		int x = human.get_speed();
 		int y = runner.get_speed();
 
-		for(int i = 0; _length > 0; _length -=x)
+		for (int i = 0; _length > -1; _length -= x)
 		{
 			i += 1;
+			cout<<_length<<"\n";
+			if (_length <= 0)
+			{
+				cout<<"JOe mama";
+			}
 		}
 	}
 };

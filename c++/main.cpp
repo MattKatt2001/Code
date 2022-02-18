@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <cmath>
+#include <vector>
 #include "human.cpp"
 #include "race.cpp"
 using namespace std;
