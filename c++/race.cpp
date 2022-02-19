@@ -42,15 +42,24 @@ public:
 	{
 		int x = human.get_speed();
 		int y = runner.get_speed();
+		int h = compare(_length, x);
+		int r = compare(_length, y);
+		cout<<h<<"\n";
+		cout<<r<< "\n";
+	}
 
-		for (int i = 0; _length > -1; _length -= x)
+	int compare(int length, int speed)
+	{
+		int out[1];
+		for (int i = 0; length > -1; length -= speed)
 		{
 			i += 1;
-			cout<<_length<<"\n";
-			if (_length <= 0)
+			//cout<<length<<"\n";
+			if (length <= 0)
 			{
-				cout<<"JOe mama";
+				out[0] = i;
 			}
 		}
+		return out[0];
 	}
 };
