@@ -9,9 +9,10 @@ using namespace std;
 
 int main()
 {
-	human Matt(20, 90, "Male", "Matthew", 187 ,10);//there is an error when speed is 0
+	human Matt(20, 90, "Male", "Matthew", 187 ,10);
 	runner Usain(35 ,94, "Male", "Usain", 195, 10);
-	race cup(100,2);//This doesn't actually mean anything atm just creates the object
+
+	race cup(100,2);
 	cup.start(Matt, Usain);
 	return 0;
 }

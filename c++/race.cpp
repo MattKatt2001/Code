@@ -38,7 +38,7 @@ public:
 		return _racers;
 	}
 
-	void start(human human, runner runner)//make it so that this takes in an array
+	void start(human human, runner runner)
 	{
 		int x = human.get_speed();
 		int y = runner.get_speed();
