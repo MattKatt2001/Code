@@ -38,7 +38,7 @@ public:
 		return _racers;
 	}
 
-	void start(human human, runner runner)
+	void start(human human, runner runner)//make it so that this takes in an array
 	{
 		int x = human.get_speed();
 		int y = runner.get_speed();
@@ -52,6 +52,12 @@ public:
 		{
 			cout << runner.get_name() + " wins!";
 		}
+	}
+
+	void start(human human)//overloaded method do for runner as well
+	{
+		int x = human.get_speed();
+		int h = compare(_length, x);
 	}
 
 	int compare(int length, int speed)
