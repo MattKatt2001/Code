@@ -44,22 +44,19 @@ public:
 		int y = runner.get_speed();
 		int h = compare(_length, x);
 		int r = compare(_length, y);
-		cout<<h<<"\n";
-		cout<<r<< "\n";
+		if(h>r)
+		{
+			cout << human.get_name() + " wins!";
+		}
+		else
+		{
+			cout << runner.get_name() + " wins!";
+		}
 	}
 
 	int compare(int length, int speed)
 	{
-		int out[1];
-		for (int i = 0; length > -1; length -= speed)
-		{
-			i += 1;
-			//cout<<length<<"\n";
-			if (length <= 0)
-			{
-				out[0] = i;
-			}
-		}
-		return out[0];
+		int result = length * speed;
+		return result;
 	}
 };
