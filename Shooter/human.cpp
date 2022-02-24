@@ -11,7 +11,7 @@
 
 	bool human::isAlive()
 	{
-    return _health > 0;
+    		return _health > 0;
 	}
 
 	void human::set_name(std::string name)
