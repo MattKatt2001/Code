@@ -1,7 +1,7 @@
 #include <iostream>
 #include "human.hpp"
 
-	human::human(std::string name, int health, int speed, int strength)
+	human::human(std::string name, int health, int speed, int strength): entity(name, health, speed, strength)
 	{
 		_name = name;
 		_health = health;
@@ -9,9 +9,9 @@
 		_strength = strength;
 	};
 
-	bool human::isAlive()
+	/*bool human::isAlive()
 	{
-    		return _health > 0;
+  	return _health > 0;
 	}
 
 	void human::set_name(std::string name)
@@ -57,4 +57,4 @@
 	void human::takeDamage(int x)
 	{
 		_health -= x;
-	}
+	}*/
