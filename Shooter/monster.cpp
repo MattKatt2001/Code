@@ -1,12 +1,12 @@
 #include <iostream>
 #include "monster.hpp"
 
-monster::monster(int health)
+monster::monster(std::string name, int health, int speed, int strength): entity(name, health, speed, strength)
 {
 	_health = health;
 };
 
-bool monster::isAlive()
+/*bool monster::isAlive()
 {
 	return _health > 0;
 }
@@ -24,4 +24,4 @@ int monster::get_health()
 void monster::takeDamage(int x)
 {
 	_health -= x;
-}
+}*/
